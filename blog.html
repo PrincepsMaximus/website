@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Blog | Maxime Deryck</title>
+<!-- Begin Jekyll SEO tag v2.9.0 -->
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Blog Maxime Deryck" />
+<meta name="author" content="Maxime Deryck" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Working towards openly verifiable perceptual hash functions." />
+<meta name="twitter:description" property="og:description" content="Working towards openly verifiable perceptual hash functions." />
+<link rel="canonical" href="https://maximederyck.be/blog.html" />
+<meta property="og:url" content="https://maximederyck.be/blog.html" />
+<meta property="og:site_name" content="Maxime Deryck PhD Researcher" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Blog Maxime Deryck" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Maxime Deryck"},"description":"Working towards openly verifiable perceptual hash functions.","headline":"Blog Maxime Deryck","url":"https://maximederyck.be/blog.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+<script>
+  tailwind.config = {
+    darkMode: "media",
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ["Inter", "system-ui", "sans-serif"],
+          mono: ["JetBrains Mono", "Menlo", "monospace"],
+        },
+        typography: (theme) => ({
+          DEFAULT: {
+            css: {
+              "--tw-prose-body": theme("colors.slate.600"),
+              "--tw-prose-headings": theme("colors.slate.900"),
+              "--tw-prose-links": theme("colors.indigo.600"),
+              "--tw-prose-bold": theme("colors.slate.900"),
+              "--tw-prose-counters": theme("colors.slate.500"),
+              "--tw-prose-bullets": theme("colors.slate.300"),
+              "--tw-prose-hr": theme("colors.slate.200"),
+              "--tw-prose-quotes": theme("colors.slate.900"),
+              "--tw-prose-quote-borders": theme("colors.indigo.600"),
+              "--tw-prose-captions": theme("colors.slate.500"),
+              "--tw-prose-code": theme("colors.slate.900"),
+              "--tw-prose-pre-code": theme("colors.slate.200"),
+              "--tw-prose-pre-bg": theme("colors.slate.800"),
+
+              "h1, h2, h3, h4": {
+                fontFamily: theme("fontFamily.mono").join(", "),
+                fontWeight: "700",
+                letterSpacing: "-0.025em",
+              },
+              a: {
+                textDecoration: "none",
+                borderBottom: `1px solid ${theme("colors.indigo.600")}`,
+                transition: "all 0.2s ease",
+                "&:hover": {
+                  backgroundColor: theme("colors.indigo.50"),
+                },
+              },
+              blockquote: {
+                fontStyle: "normal",
+                backgroundColor: theme("colors.slate.50"),
+                padding: theme("spacing.4"),
+                border: `1px solid ${theme("colors.slate.200")}`,
+                borderLeft: `4px solid ${theme("colors.indigo.600")}`,
+              },
+              code: {
+                backgroundColor: theme("colors.slate.100"),
+                padding: "0.2em 0.4em",
+                fontWeight: "400",
+                border: `1px solid ${theme("colors.slate.200")}`,
+              },
+              "code::before": { content: '""' },
+              "code::after": { content: '""' },
+              pre: {
+                border: `1px solid ${theme("colors.slate.700")}`,
+                borderRadius: "0",
+              },
+            },
+          },
+          invert: {
+            css: {
+              "--tw-prose-body": theme("colors.slate.400"),
+              "--tw-prose-headings": theme("colors.white"),
+              "--tw-prose-links": theme("colors.indigo.400"),
+              "--tw-prose-bold": theme("colors.white"),
+              "--tw-prose-quotes": theme("colors.slate.100"),
+              "--tw-prose-quote-borders": theme("colors.indigo.400"),
+              "--tw-prose-code": theme("colors.white"),
+              "--tw-prose-pre-code": theme("colors.slate.300"),
+              "--tw-prose-pre-bg": "rgb(22, 24, 29)",
+              a: {
+                borderBottom: `1px solid ${theme("colors.indigo.400")}`,
+                "&:hover": {
+                  backgroundColor: "rgba(99, 102, 241, 0.1)",
+                },
+              },
+              blockquote: {
+                backgroundColor: "rgb(22, 24, 29)",
+                border: `1px solid ${theme("colors.slate.700")}`,
+                borderLeft: `4px solid ${theme("colors.indigo.400")}`,
+              },
+              code: {
+                backgroundColor: theme("colors.slate.800"),
+                border: `1px solid ${theme("colors.slate.700")}`,
+              },
+            },
+          },
+        }),
+      },
+    },
+  };
+</script>
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="/assets/css/main.css" />
+
+  </head>
+  <body
+    class="bg-[#fafafa] dark:bg-[#0f1115] text-slate-900 dark:text-slate-200 font-sans min-h-screen bg-grid-pattern transition-colors duration-300 relative"
+  >
+     <nav
+  class="sticky top-0 z-50 bg-[#fafafa]/95 dark:bg-[#0f1115]/95 backdrop-blur-md border-b border-slate-300 dark:border-slate-800"
+>
+  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    
+    <a
+      href="/"
+      class="font-mono text-sm text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors flex items-center gap-2"
+    >
+      <span class="hidden sm:inline">←</span> Back home
+    </a>
+    
+
+    <div
+      class="font-mono text-sm overflow-x-auto whitespace-nowrap absolute left-1/2 -translate-x-1/2 flex items-center"
+    >
+      <a
+        href="/"
+        class="text-slate-900 dark:text-slate-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+        >~/maxime-deryck</a
+      >
+      <span class="text-slate-400 mx-2">/</span>
+
+      
+      <span class="text-indigo-600 dark:text-indigo-400 font-bold truncate">
+        blog
+      </span>
+      
+    </div>
+  </div>
+</nav>
+  <main class="max-w-4xl mx-auto px-6 py-12 lg:py-24 space-y-12">
+  <header class="mb-12">
+    <h1
+      class="font-mono text-3xl font-bold mb-4 text-slate-900 dark:text-white"
+    >
+      ./blog
+    </h1>
+    <p class="text-slate-600 dark:text-slate-400 text-lg">
+      Personal thoughts, experiences, and cryptographic ramblings.
+    </p>
+  </header>
+
+  <div class="space-y-6">
+    
+    <div
+      class="py-12 border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#16181d] p-8 flex justify-center"
+    >
+      <p class="text-slate-500 dark:text-slate-400 italic text-center">
+        No blogposts have been made yet ...
+      </p>
+    </div>
+    
+  </div>
+</main>
+
+  </body>
+</html>

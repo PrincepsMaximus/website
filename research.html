@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Research | Maxime Deryck</title>
+<!-- Begin Jekyll SEO tag v2.9.0 -->
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Research Maxime Deryck" />
+<meta name="author" content="Maxime Deryck" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Working towards openly verifiable perceptual hash functions." />
+<meta name="twitter:description" property="og:description" content="Working towards openly verifiable perceptual hash functions." />
+<link rel="canonical" href="https://maximederyck.be/research.html" />
+<meta property="og:url" content="https://maximederyck.be/research.html" />
+<meta property="og:site_name" content="Maxime Deryck PhD Researcher" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Research Maxime Deryck" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Maxime Deryck"},"description":"Working towards openly verifiable perceptual hash functions.","headline":"Research Maxime Deryck","url":"https://maximederyck.be/research.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+<script>
+  tailwind.config = {
+    darkMode: "media",
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ["Inter", "system-ui", "sans-serif"],
+          mono: ["JetBrains Mono", "Menlo", "monospace"],
+        },
+        typography: (theme) => ({
+          DEFAULT: {
+            css: {
+              "--tw-prose-body": theme("colors.slate.600"),
+              "--tw-prose-headings": theme("colors.slate.900"),
+              "--tw-prose-links": theme("colors.indigo.600"),
+              "--tw-prose-bold": theme("colors.slate.900"),
+              "--tw-prose-counters": theme("colors.slate.500"),
+              "--tw-prose-bullets": theme("colors.slate.300"),
+              "--tw-prose-hr": theme("colors.slate.200"),
+              "--tw-prose-quotes": theme("colors.slate.900"),
+              "--tw-prose-quote-borders": theme("colors.indigo.600"),
+              "--tw-prose-captions": theme("colors.slate.500"),
+              "--tw-prose-code": theme("colors.slate.900"),
+              "--tw-prose-pre-code": theme("colors.slate.200"),
+              "--tw-prose-pre-bg": theme("colors.slate.800"),
+
+              "h1, h2, h3, h4": {
+                fontFamily: theme("fontFamily.mono").join(", "),
+                fontWeight: "700",
+                letterSpacing: "-0.025em",
+              },
+              a: {
+                textDecoration: "none",
+                borderBottom: `1px solid ${theme("colors.indigo.600")}`,
+                transition: "all 0.2s ease",
+                "&:hover": {
+                  backgroundColor: theme("colors.indigo.50"),
+                },
+              },
+              blockquote: {
+                fontStyle: "normal",
+                backgroundColor: theme("colors.slate.50"),
+                padding: theme("spacing.4"),
+                border: `1px solid ${theme("colors.slate.200")}`,
+                borderLeft: `4px solid ${theme("colors.indigo.600")}`,
+              },
+              code: {
+                backgroundColor: theme("colors.slate.100"),
+                padding: "0.2em 0.4em",
+                fontWeight: "400",
+                border: `1px solid ${theme("colors.slate.200")}`,
+              },
+              "code::before": { content: '""' },
+              "code::after": { content: '""' },
+              pre: {
+                border: `1px solid ${theme("colors.slate.700")}`,
+                borderRadius: "0",
+              },
+            },
+          },
+          invert: {
+            css: {
+              "--tw-prose-body": theme("colors.slate.400"),
+              "--tw-prose-headings": theme("colors.white"),
+              "--tw-prose-links": theme("colors.indigo.400"),
+              "--tw-prose-bold": theme("colors.white"),
+              "--tw-prose-quotes": theme("colors.slate.100"),
+              "--tw-prose-quote-borders": theme("colors.indigo.400"),
+              "--tw-prose-code": theme("colors.white"),
+              "--tw-prose-pre-code": theme("colors.slate.300"),
+              "--tw-prose-pre-bg": "rgb(22, 24, 29)",
+              a: {
+                borderBottom: `1px solid ${theme("colors.indigo.400")}`,
+                "&:hover": {
+                  backgroundColor: "rgba(99, 102, 241, 0.1)",
+                },
+              },
+              blockquote: {
+                backgroundColor: "rgb(22, 24, 29)",
+                border: `1px solid ${theme("colors.slate.700")}`,
+                borderLeft: `4px solid ${theme("colors.indigo.400")}`,
+              },
+              code: {
+                backgroundColor: theme("colors.slate.800"),
+                border: `1px solid ${theme("colors.slate.700")}`,
+              },
+            },
+          },
+        }),
+      },
+    },
+  };
+</script>
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="/assets/css/main.css" />
+
+  </head>
+  <body
+    class="bg-[#fafafa] dark:bg-[#0f1115] text-slate-900 dark:text-slate-200 font-sans min-h-screen bg-grid-pattern transition-colors duration-300 relative"
+  >
+     <nav
+  class="sticky top-0 z-50 bg-[#fafafa]/95 dark:bg-[#0f1115]/95 backdrop-blur-md border-b border-slate-300 dark:border-slate-800"
+>
+  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    
+    <a
+      href="/"
+      class="font-mono text-sm text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors flex items-center gap-2"
+    >
+      <span class="hidden sm:inline">←</span> Back home
+    </a>
+    
+
+    <div
+      class="font-mono text-sm overflow-x-auto whitespace-nowrap absolute left-1/2 -translate-x-1/2 flex items-center"
+    >
+      <a
+        href="/"
+        class="text-slate-900 dark:text-slate-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+        >~/maxime-deryck</a
+      >
+      <span class="text-slate-400 mx-2">/</span>
+
+      
+      <span class="text-indigo-600 dark:text-indigo-400 font-bold truncate">
+        research
+      </span>
+      
+    </div>
+  </div>
+</nav>
+  <main class="max-w-6xl mx-auto px-6 py-12 lg:flex lg:gap-16 lg:items-start">
+  
+
+  <aside
+    class="hidden lg:block w-56 shrink-0 sticky top-24 space-y-8 font-mono text-sm"
+  >
+    <div
+      id="auto-toc"
+      class="space-y-4 pt-6 border-t border-slate-300 dark:border-slate-800"
+    >
+      <h3
+        class="text-slate-400 dark:text-slate-500 mb-2 font-bold uppercase tracking-wider text-xs"
+      >
+        On this page
+      </h3>
+      <!-- JS automatically inserts TOC links here -->
+    </div>
+  </aside>
+
+  <div class="lg:hidden font-mono text-sm mb-8">
+    <a
+      href="/"
+      class="inline-flex items-center gap-2 text-slate-600 dark:text-slate-400 hover:text-indigo-600 transition-colors"
+    >
+      ← Back to home
+    </a>
+  </div>
+
+  <div class="flex-1 min-w-0 space-y-24">
+    <section id="overview" class="scroll-mt-32">
+      <h2
+        class="font-mono text-2xl font-bold mb-6 flex items-center gap-4 text-slate-900 dark:text-white"
+      >
+        <span class="text-slate-400 dark:text-slate-600"
+          >01.</span
+        >
+        Research project
+      </h2>
+      
+      <div
+        class="border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#16181d] p-8 md:p-10 shadow-[4px_4px_0px_0px_rgba(203,213,225,1)] dark:shadow-[4px_4px_0px_0px_rgba(30,41,59,1)]"
+      >
+        <div
+          class="flex flex-col md:flex-row md:items-start justify-between gap-4 mb-8"
+        >
+          <h3
+            class="text-2xl font-semibold text-slate-900 dark:text-white leading-snug"
+          >
+            Cryptographic Formalisation, Evaluation and Design of Perceptual Hash Functions
+          </h3>
+          <div class="flex flex-wrap gap-3 shrink-0">
+            <a
+              href="https://research.kuleuven.be/portal/en/project/3E260537"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="font-mono text-xs text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-900/30 border border-indigo-200 dark:border-indigo-800 px-3 py-1.5 rounded hover:bg-indigo-100 dark:hover:bg-indigo-900/50 transition-colors inline-flex items-center gap-2"
+            >
+              KU Leuven<br />Research<br />Portal ↗
+            </a>
+          </div>
+        </div>
+
+        <ul
+          class="space-y-6 text-slate-600 dark:text-slate-400 leading-relaxed text-base"
+        >
+          
+          <li class="flex gap-4">
+            <span
+              class="font-mono text-lg text-indigo-600 dark:text-indigo-400 font-bold mt-0.5 select-none"
+              >&gt;</span
+            >
+            <div>
+              <strong class="text-slate-900 dark:text-slate-200"
+                >Formalising PHF security:</strong
+              >
+              Establishing comprehensive threat models and essential security properties for perceptual hash functions.
+            </div>
+          </li>
+          
+          <li class="flex gap-4">
+            <span
+              class="font-mono text-lg text-indigo-600 dark:text-indigo-400 font-bold mt-0.5 select-none"
+              >&gt;</span
+            >
+            <div>
+              <strong class="text-slate-900 dark:text-slate-200"
+                >Systematic cryptanalysis:</strong
+              >
+              Conducting in-depth analysis of deployed functions to uncover shared vulnerabilities, standardise adversarial models, and define attack vectors.
+            </div>
+          </li>
+          
+          <li class="flex gap-4">
+            <span
+              class="font-mono text-lg text-indigo-600 dark:text-indigo-400 font-bold mt-0.5 select-none"
+              >&gt;</span
+            >
+            <div>
+              <strong class="text-slate-900 dark:text-slate-200"
+                >Mathematical properties:</strong
+              >
+              Exploring the theoretical limits of current designs, specifically focusing on linearity and differentiability, to prove the feasibility (or inexistence) of inherently non-linear PHFs.
+            </div>
+          </li>
+          
+          <li class="flex gap-4">
+            <span
+              class="font-mono text-lg text-indigo-600 dark:text-indigo-400 font-bold mt-0.5 select-none"
+              >&gt;</span
+            >
+            <div>
+              <strong class="text-slate-900 dark:text-slate-200"
+                >Introducing keyed PHFs:</strong
+              >
+              Developing novel keyed designs to create openly verifiable systems that remain resilient against adversarial manipulation, even when the algorithm is public.
+            </div>
+          </li>
+          
+          <li class="flex gap-4">
+            <span
+              class="font-mono text-lg text-indigo-600 dark:text-indigo-400 font-bold mt-0.5 select-none"
+              >&gt;</span
+            >
+            <div>
+              <strong class="text-slate-900 dark:text-slate-200"
+                >Formal security modelling:</strong
+              >
+              Shifting PHF evaluation from empirical, ad-hoc testing to a rigorous framework supported by formal analysis and security proofs.
+            </div>
+          </li>
+          
+        </ul>
+      </div>
+    </section>
+
+    <section id="publications" class="scroll-mt-32">
+      <div
+        class="flex items-end justify-between mb-6 border-b border-slate-300 dark:border-slate-800 pb-4"
+      >
+        <h2
+          class="font-mono text-2xl font-bold flex items-center gap-4 text-slate-900 dark:text-white"
+        >
+          <span class="text-slate-400 dark:text-slate-600"
+            >02.</span
+          >
+          Publications
+        </h2>
+        
+        <span class="font-mono text-sm text-slate-500">Sorted by year</span>
+      </div>
+
+      <div class="space-y-8 pt-2">
+         
+        <div class="relative z-0 group">
+          <span
+            class="absolute top-0 right-6 text-slate-400 dark:text-slate-500 font-bold text-sm tracking-widest opacity-0 transform translate-y-4 group-hover:-translate-y-7 group-hover:opacity-100 transition-all duration-300 pointer-events-none -z-10"
+          >
+            2026
+          </span>
+
+          <article
+            class="relative bg-white dark:bg-[#16181d] border border-slate-300 dark:border-slate-700 p-6 md:p-8 transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-[4px_4px_0px_0px_rgba(79,70,229,0.2)] dark:group-hover:shadow-[4px_4px_0px_0px_rgba(129,140,248,0.2)]"
+          >
+            <div
+              class="flex flex-col md:flex-row justify-between md:items-start gap-6"
+            >
+              <div class="flex-1">
+                <h3
+                  class="text-xl font-semibold mb-2 text-slate-900 dark:text-white leading-tight"
+                >
+                  White-Box Attacks on PhotoDNA Perceptual Hash Function
+                </h3>
+                <p class="text-slate-600 dark:text-slate-400 text-sm mb-4"><span
+                    class="font-semibold text-slate-900 dark:text-slate-200 border-b border-slate-300 dark:border-slate-600"
+                    >Maxime Deryck</span
+                  >, Diane Leblanc-Albarel, Bart Preneel</p>
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="font-mono text-xs text-orange-600 dark:text-orange-400 bg-orange-50 dark:bg-orange-900/30 border border-orange-200 dark:border-orange-800 px-2 py-1 rounded"
+                  >
+                    IACR ePrint Archive
+                  </span>
+                </div>
+              </div>
+              <div
+                class="flex flex-row md:flex-col gap-3 font-mono text-sm shrink-0"
+              >
+                
+                <a
+                  href="https://eprint.iacr.org/2026/486.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="border border-slate-300 dark:border-slate-700 px-4 py-2 text-center hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                >
+                  PDF
+                </a>
+                
+                <a
+                  href="https://eprint.iacr.org/2026/486"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="border border-slate-300 dark:border-slate-700 px-4 py-2 text-center hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                >
+                  ePrint
+                </a>
+                
+              </div>
+            </div>
+          </article>
+        </div>
+         
+      </div>
+    </section>
+
+    <section id="thesis" class="scroll-mt-32">
+      <div
+        class="flex items-end justify-between mb-6 border-b border-slate-300 dark:border-slate-800 pb-4"
+      >
+        <h2
+          class="font-mono text-2xl font-bold flex items-center gap-4 text-slate-900 dark:text-white"
+        >
+          <span class="text-slate-400 dark:text-slate-600"
+            >03.</span
+          >
+          Master's thesis
+        </h2>
+      </div>
+
+      <div class="space-y-8 pt-2">
+        <div class="relative z-0 group">
+          <span
+            class="absolute top-0 right-6 text-slate-400 dark:text-slate-500 font-bold text-sm tracking-widest opacity-0 transform translate-y-4 group-hover:-translate-y-7 group-hover:opacity-100 transition-all duration-300 pointer-events-none -z-10"
+          >
+            2026
+          </span>
+
+          <article
+            class="relative bg-white dark:bg-[#16181d] border border-slate-300 dark:border-slate-700 p-6 md:p-8 transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-[4px_4px_0px_0px_rgba(79,70,229,0.2)] dark:group-hover:shadow-[4px_4px_0px_0px_rgba(129,140,248,0.2)]"
+          >
+            <div class="flex flex-col sm:flex-row gap-6 md:gap-8">
+              <div
+                class="w-full sm:w-32 md:w-40 shrink-0 border border-slate-200 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 overflow-hidden shadow-sm self-start"
+              >
+                <a
+                  href="assets/Cryptography meets Finite Geometry.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="assets/master_thesis_cover.jpg"
+                    alt="Cryptography meets Finite Geometry Thesis Cover"
+                    class="w-full h-auto object-cover opacity-90 group-hover:opacity-100 transition-opacity"
+                  />
+                </a>
+              </div>
+
+              <div class="flex-1 flex flex-col justify-between">
+                <div>
+                  <h3
+                    class="text-xl font-semibold mb-2 text-slate-900 dark:text-white leading-tight"
+                  >
+                    Cryptography meets Finite Geometry
+                  </h3>
+                  <p
+                    class="text-slate-600 dark:text-slate-400 text-sm mb-3 italic"
+                  >
+                    Supervisors: Prof. Jan De Beule (VUB) & Prof. Leo Storme (UGent)
+                  </p>
+                  <p
+                    class="text-slate-600 dark:text-slate-400 text-sm mb-6 leading-relaxed max-w-3xl"
+                  >
+                    This thesis highlights the interplay between cryptography and finite geometry. The first part provides a literature study on code constructions for code-based cryptography using scattered subspaces, alongside an analysis of the historic cryptanalysis of the GPT cryptosystem. In the second part, novel results are formulated regarding the number of non-bent components of quadratic APN functions that can be used in symmetric block ciphers. These results were obtained using a new connection with projective hypersurfaces and Reed-Muller codes.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="mt-16 pt-8 border-t border-slate-300 dark:border-slate-800 flex items-center justify-between font-mono text-sm text-slate-500"
+    >
+      <a
+        href="/"
+        class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+        >← Return home</a
+      >
+      <a
+        href="#"
+        class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+        >Top of page ↑</a
+      >
+    </footer>
+  </div>
+</main>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const tocContainer = document.getElementById("auto-toc");
+    if (!tocContainer) return;
+
+    const sections = document.querySelectorAll("section[id]");
+
+    sections.forEach((section) => {
+      const heading = section.querySelector("h2");
+      if (heading) {
+        const rawText = heading.textContent;
+        const cleanText = rawText.replace(/[0-9]+\.\s*/, "").trim();
+
+        const link = document.createElement("a");
+        link.href = `#${section.id}`;
+        link.className =
+          "block text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors capitalize-first";
+        link.textContent =
+          cleanText.charAt(0).toUpperCase() + cleanText.slice(1).toLowerCase();
+
+        tocContainer.appendChild(link);
+      }
+    });
+  });
+</script>
+
+  </body>
+</html>
