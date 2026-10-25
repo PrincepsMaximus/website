@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Talks | Maxime Deryck</title>
+<!-- Begin Jekyll SEO tag v2.9.0 -->
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Talks Maxime Deryck" />
+<meta name="author" content="Maxime Deryck" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Working towards openly verifiable perceptual hash functions." />
+<meta name="twitter:description" property="og:description" content="Working towards openly verifiable perceptual hash functions." />
+<link rel="canonical" href="https://maximederyck.be/talks.html" />
+<meta property="og:url" content="https://maximederyck.be/talks.html" />
+<meta property="og:site_name" content="Maxime Deryck PhD Researcher" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Talks Maxime Deryck" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Maxime Deryck"},"description":"Working towards openly verifiable perceptual hash functions.","headline":"Talks Maxime Deryck","url":"https://maximederyck.be/talks.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<!-- Ask crawlers not to use this page for AI training (indexing is fine) -->
+<meta name="robots" content="noai, noimageai" />
+<meta name="tdm-reservation" content="1" />
+
+
+<link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+<link rel="shortcut icon" href="/assets/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Maxime Deryck" />
+<link rel="manifest" href="/assets/site.webmanifest" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="/assets/css/main.css" />
+<script src="/assets/js/site.js" defer></script>
+
+  </head>
+  <body
+    class="bg-[#fafafa] dark:bg-[#0f1115] text-slate-900 dark:text-slate-200 font-sans min-h-screen bg-grid-pattern transition-colors duration-300 relative"
+  >
+    
+      <nav
+  class="sticky top-0 z-50 bg-[#fafafa]/95 dark:bg-[#0f1115]/95 backdrop-blur-md border-b border-slate-300 dark:border-slate-800"
+>
+  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a
+      href="/"
+      class="hidden lg:flex font-mono text-sm text-slate-600 dark:text-slate-400 link-subtle items-center gap-2"
+    >
+      <span>←</span> Back home
+    </a>
+
+    <div
+      class="font-mono text-sm whitespace-nowrap absolute left-1/2 -translate-x-1/2 flex items-center max-w-[calc(100%-7rem)]"
+    >
+      <a
+        href="/"
+        class="shrink-0 text-slate-900 dark:text-slate-200 link-subtle"
+        >~/maxime-deryck</a
+      >
+      <span class="shrink-0 text-slate-400 mx-2">/</span>
+
+      
+      <span class="min-w-0 text-indigo-600 dark:text-indigo-400 font-bold truncate">
+        talks
+      </span>
+      
+    </div>
+
+    <button
+      type="button"
+      class="group lg:hidden relative ml-auto h-5 w-5 text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors before:absolute before:-inset-3"
+      aria-label="Menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <span
+        class="absolute left-0 top-[3px] h-0.5 w-5 bg-current transition-all duration-300 group-aria-expanded:top-[9px] group-aria-expanded:rotate-45"
+      ></span>
+      <span
+        class="absolute left-0 top-[9px] h-0.5 w-5 bg-current transition-opacity duration-300 group-aria-expanded:opacity-0"
+      ></span>
+      <span
+        class="absolute left-0 top-[15px] h-0.5 w-5 bg-current transition-all duration-300 group-aria-expanded:top-[9px] group-aria-expanded:-rotate-45"
+      ></span>
+    </button>
+  </div>
+
+  <div
+    id="mobile-menu"
+    class="lg:hidden grid grid-rows-[0fr] opacity-0 data-[open]:grid-rows-[1fr] data-[open]:opacity-100 transition-all duration-300 ease-in-out"
+    data-close-on-link
+    inert
+  >
+    <div class="min-h-0 overflow-hidden">
+      <div class="max-w-6xl mx-auto px-6 pt-2 pb-6 font-mono text-sm space-y-6">
+        <div
+          data-toc-wrapper
+          data-toc="block text-slate-600 dark:text-slate-400 link-subtle"
+          class="hidden space-y-4"
+        >
+          <h3
+            class="text-slate-400 dark:text-slate-500 font-bold uppercase tracking-wider text-xs"
+          >
+            On this page
+          </h3>
+        </div>
+        <a
+          href="/"
+          class="flex items-center gap-2 pt-4 border-t border-dashed border-slate-300 dark:border-slate-700 text-slate-600 dark:text-slate-400 link-subtle"
+        >
+          <span>←</span> Back home
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    
+
+    <main
+  class="max-w-6xl mx-auto px-6 py-12 lg:flex lg:gap-16 lg:items-start"
+  data-toc-source="section[id]"
+  data-toc-numbered
+>
+  <aside
+    class="hidden lg:block w-56 shrink-0 sticky top-24 space-y-8 font-mono text-sm"
+  >
+    <div
+      data-toc="block text-slate-600 dark:text-slate-400 link-subtle"
+      class="space-y-4 pt-6 border-t border-slate-300 dark:border-slate-800"
+    >
+      <h3
+        class="text-slate-400 dark:text-slate-500 mb-2 font-bold uppercase tracking-wider text-xs"
+      >
+        On this page
+      </h3>
+    </div>
+  </aside>
+
+  <div class="flex-1 min-w-0 space-y-24">
+    
+
+
+
+
+
+
+<section id="speaking" class="scroll-mt-32">
+  <h2 class="section-title mb-6">
+  <span class="text-slate-400 dark:text-slate-600">01.</span>
+  Public speaking
+</h2>
+  <div class="card card-shadow p-8 md:p-10">
+    <div class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed space-y-4 markdown-content">
+      
+        <p>Public speaking is something I thoroughly enjoy, from conference talks to outreach activities. Communicating results clearly, be it to specialists, to colleagues at an internal seminar or to a broader audience, sharpens my own understanding of a topic, and the discussions that follow regularly raise interesting new research questions.</p>
+
+      
+        <p>Below, you can find my upcoming and past talks, together with slides and recordings where available.</p>
+
+      
+    </div>
+
+    
+    <div class="mt-8 pt-8 border-t border-dashed border-slate-300 dark:border-slate-700">
+      <h3 class="list-label mb-3">
+  
+  <span class="inline-flex h-2 w-2 rounded-full bg-amber-500 dark:bg-amber-400"></span>
+   Beyond academia
+</h3>
+
+      <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
+        Outside my own research area, I also enjoy bringing science to a broader audience, mainly within the Flemish amateur astronomy community:
+      </p>
+      <ul class="space-y-3 text-sm text-slate-600 dark:text-slate-400 leading-relaxed underline-links">
+        
+        <li class="flex gap-3">
+          <span class="font-mono text-indigo-600 dark:text-indigo-400 font-bold select-none">&gt;</span>
+          <div>
+            <strong class="text-slate-900 dark:text-slate-200">Coding Theory in Space Communications:</strong>
+            a lecture on how error-correcting codes keep data from spacecraft intact, given in a course at <a href="https://www.cozmix.be/">Volkssterrenwacht Beisbroek</a>, the public observatory and planetarium of Bruges, and in a shorter version at the JVS/VVS-weekend (2025).
+          </div>
+        </li>
+        
+        <li class="flex gap-3">
+          <span class="font-mono text-indigo-600 dark:text-indigo-400 font-bold select-none">&gt;</span>
+          <div>
+            <strong class="text-slate-900 dark:text-slate-200">JVS Hyperion:</strong>
+            monthly talks for this local youth astronomy club, part of the JVS, the youth branch of the <a href="https://www.vvs.be/">Vereniging Voor Sterrenkunde</a> (VVS).
+          </div>
+        </li>
+        
+        <li class="flex gap-3">
+          <span class="font-mono text-indigo-600 dark:text-indigo-400 font-bold select-none">&gt;</span>
+          <div>
+            <strong class="text-slate-900 dark:text-slate-200">VVS Summer School on Astronomy:</strong>
+            practical sessions at the summer school for secondary-school students that the VVS organises in Leuven, together with the Flemish universities.
+          </div>
+        </li>
+        
+      </ul>
+    </div>
+    
+  </div>
+</section>
+
+<section id="talks" class="scroll-mt-32">
+  <div
+  class="flex items-end justify-between mb-6 border-b border-slate-300 dark:border-slate-800 pb-4"
+>
+  <h2 class="section-title">
+    <span class="text-slate-400 dark:text-slate-600">02.</span>
+    Talks
+  </h2>
+  <span class="font-mono text-sm text-slate-500 text-right"
+    >Sorted by date</span
+  >
+</div>
+
+  
+  <div class="space-y-12 pt-2">
+    
+    <div id="upcoming-talks">
+      <h3 class="list-label mb-4">
+  
+  <span class="inline-flex h-2 w-2 rounded-full bg-indigo-600 dark:bg-indigo-400"></span>
+   Upcoming
+</h3>
+
+      <div class="space-y-6">
+        
+          <article
+  data-upcoming-talk="2026-11-19-cryptanalysis-of-microsoft-s-photodna-breaking-an-industry-standard"
+  data-date="2026-11-19"
+  class="flex gap-5 md:gap-8 card border-l-4 border-l-indigo-600 dark:border-l-indigo-400 p-5 md:p-8 shadow-[4px_4px_0px_0px_rgba(79,70,229,0.2)] dark:shadow-[4px_4px_0px_0px_rgba(129,140,248,0.2)]"
+>
+  <div class="shrink-0 w-16 md:w-20 self-start text-center font-mono border border-slate-300 dark:border-slate-700" aria-hidden="true">
+    <div class="bg-indigo-600 dark:bg-indigo-500 text-white text-xs font-bold uppercase tracking-wider py-1">
+      Nov
+    </div>
+    <div class="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white pt-1">
+      19
+    </div>
+    <div class="text-xs text-slate-500 pb-1">
+      2026
+    </div>
+  </div>
+
+  <div class="flex-1 min-w-0">
+    <div class="flex flex-wrap items-center gap-x-4 gap-y-2 mb-3">
+      <span
+  class="font-mono text-xs text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-900/30 border border-emerald-200 dark:border-emerald-800 rounded px-2 py-0.5 whitespace-nowrap"
+  >Internal seminar</span
+>
+
+      <span
+  class="font-mono text-xs text-indigo-600 dark:text-indigo-400 inline-flex items-center gap-2 whitespace-nowrap"
+>
+  <span class="relative flex h-2 w-2">
+    <span
+      class="absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75 animate-ping motion-reduce:hidden"
+    ></span>
+    <span
+      class="relative inline-flex h-2 w-2 rounded-full bg-indigo-600 dark:bg-indigo-400"
+    ></span>
+  </span>
+  <span data-countdown="2026-11-19"
+    >In
+    25 days</span
+  >
+</span>
+
+    </div>
+    <h4 class="text-xl font-semibold text-slate-900 dark:text-white leading-tight mb-2">
+      Cryptanalysis of Microsoft's PhotoDNA: Breaking an Industry Standard
+    </h4>
+    <p class="text-sm text-slate-500 dark:text-slate-400">
+      <span class="sr-only">19 November 2026 · </span>PEERS lunch seminar · KU Leuven
+    </p>
+    
+    <div class="mt-5">
+      
+    </div>
+  </div>
+</article>
+
+        
+      </div>
+    </div>
+    
+
+    
+    <div id="past-talks" class="hidden">
+      <h3 class="list-label mb-6">
+  
+  <span class="inline-flex h-2 w-2 rounded-full bg-slate-300 dark:bg-slate-600"></span>
+   Past
+</h3>
+
+      <div class="space-y-10">
+        
+          
+          
+
+          <div data-year-group class="hidden">
+            <div class="flex items-center gap-4 mb-4">
+              <span class="font-mono text-sm font-bold text-slate-400 dark:text-slate-500">2026</span>
+              <span class="flex-1 border-t border-slate-200 dark:border-slate-800"></span>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              
+                
+                
+                
+                
+                  <article
+  data-past-talk="2026-11-19-cryptanalysis-of-microsoft-s-photodna-breaking-an-industry-standard"
+  class="group flex flex-col card p-6 data-[upcoming]:border-t-4 data-[upcoming]:border-t-indigo-600 dark:data-[upcoming]:border-t-indigo-400 lift hidden"
+>
+  <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+    <p class="font-mono text-xs text-slate-500">19 Nov 2026</p>
+    <span
+  class="font-mono text-xs text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-900/30 border border-emerald-200 dark:border-emerald-800 rounded px-2 py-0.5 whitespace-nowrap"
+  >Internal seminar</span
+>
+
+  </div>
+  
+  <h4 class="text-lg font-semibold mb-1 leading-snug">Cryptanalysis of Microsoft's PhotoDNA: Breaking an Industry Standard</h4>
+  
+  <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">
+    PEERS lunch seminar · KU Leuven
+  </p>
+  <div class="mt-auto flex flex-wrap items-center justify-between gap-3">
+    <div class="hidden group-data-[upcoming]:block">
+      <span class="font-mono text-xs text-slate-500 dark:text-slate-400">Upcoming</span>
+    </div>
+    
+  </div>
+</article>
+
+                
+              
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+
+    <footer
+      class="mt-16 pt-8 border-t border-slate-300 dark:border-slate-800 flex items-center justify-between font-mono text-sm text-slate-500"
+    >
+      <a href="/" class="link-subtle">← Return home</a>
+      <a href="#" class="link-subtle">Top of page ↑</a>
+    </footer>
+  </div>
+</main>
+
+  </body>
+</html>
